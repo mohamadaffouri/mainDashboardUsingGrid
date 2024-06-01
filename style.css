@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eff5f7;
+    width: 100%;
+    min-height: 100vh;
+}
+.firstGridDiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    height: 25vh;
+    padding: 8px;
+
+}
+.first1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.first1>div{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #b2afab;
+}
+.first2{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    overflow: hidden;
+    border-radius: 8px;
+    row-gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.first2Item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    background-color: #11c15b;
+}
+.first2Item2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white; 
+    background-color: #32ed80;
+    padding-left: 5%;
+
+}
+.first2Item3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white; 
+    background-color: #448aff;
+}
+.first2Item4{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white; 
+    background-color: #91baff;
+    padding-left: 5%;
+}
+
+
+.secondDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    height: 50vh;
+    padding: 8px;
+
+}
+.second1{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr ;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   
+}
+.second1>div{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #b2afab;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.second2{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 3fr 2fr 3fr ;
+    gap: 15px;
+    height: 90%;
+}
+.second2STyle1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #b2afab;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.second2STyle2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: center;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.lastGridDiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 25vh;
+    padding: 8px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+
+}
+.lastGridDiv>div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #b2afab;
+    height: 100%;
+    padding: 15px;
+    
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .firstGridDiv{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        height: auto;
+        padding: 8px;
+    
+    }
+    .secondDiv{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        height: auto;
+        padding: 8px;
+    
+    }
+    .lastGridDiv{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 8px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       
+    
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first1 > div:nth-child(1) {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.first1 > div:nth-child(2) {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.first1 > div:nth-child(3) {
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+.first1 > div:nth-child(4) {
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+
+
+
+
